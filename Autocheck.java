@@ -47,7 +47,7 @@ public class Autocheck
      Statement sts6 =con.createStatement();
      
      
-     ResultSet rs = sts1.executeQuery("select userid, uniqueid from mdl_quiz_attempts where quiz="+quizid+";");
+     ResultSet rs = sts1.executeQuery("select userid, uniqueid from mdl_quiz_attempts where quiz="+quizid+" and sumgrades is NULL;");
     
     
    /* ResultSet rs=sts1.executeQuery( "select a.userid,b.responsesummary,c.fraction,c.state from mdl_quiz_attempts a inner join mdl_question_attempts b on a.uniqueid=b.questionusageid inner join  mdl_question_attempt_steps c on c.questionattemptid = b.id where a.userid=2 and a.quiz=7;");*/

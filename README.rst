@@ -1,4 +1,4 @@
-Auto programming checker(apc)
+Auto Programming Checker(apc)
 =============================
 
 About
